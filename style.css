@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+
+:root {
+    --colorletras: #272a38;
+    --colorheader: #ffffff;
+    --colorespacionave: #6034be;
+    --colorentraranave: #642cdf;
+    --colordelcuerpo:#fcfbff;
+}
+
+* {
+    margin: ;
+    padding: ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header{
+    background-color:#ffffff;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 14px;
+    border-bottom: 1px solid #cececfec;
+    position: fixed ;
+    top: 0px;
+    left: 0px;
+     z-index: 1000;
+
+}
+.header__contenedor-contenidos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:95%;
+    margin-left: 140px;
+
+}
+
+.header__botones{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 33%;
+    margin-left: 30px;
+}
+
+.header__navelista{
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    margin: 1px;
+    width: 100%;
+    color: #242c37;
+    align-items: center;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+.divider-line{
+    width: 1px;
+    height: 25px;
+    background-color: #a0a0a0;
+}
+
+.nave{
+    display: flex;
+    flex-direction:row;
+    text-align:center;
+    background-color: #ffffff;
+    padding: 10px 35px;
+    border-radius: 50px;
+    color: #6034be;
+    border: solid 1px;color: #6034be;
+       
+}
+
+.entrar{
+    background-color: #642cdf;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: solid 1px;color: #6034be;
+    color: #ffffff;
+}
+
+.nave:hover{
+    background-color:#d3cbe5;
+    padding: 10px  35px;
+    color: #4116a0;
+    border-radius: 50px;
+    border: 1px solid; color: #4116a0;
+}
+
+.entrar:hover{
+    background-color:#d3cbe5;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: solid 1px; color: #4116a0;
+}
+
+.nave-item:hover{
+ background-color:#d3cbe5;
+ color:#4116a0; 
+   padding: 15px  15px;
+   border-radius: 50px;
+}
+
+.nave-item{
+    padding: 15px 15px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.body {
+    margin: 0;            
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcfbff;
+}
+
+.principal{
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b2b2c;
+}
+
+.contenido{
+    display:flex;
+    justify-content: center;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 50px;
+    color: #2b2b2c;
+    gap: 25px;
+
+}
+
+.clarita{
+    font-weight: normal;
+    color:#777774;
+}
+
+.bi-cash{
+    color: #6034be;
+    font-size: 25px;
+    padding: 17px;
+    border-radius: 10px;
+    background-color: #f1eafc;
+}
+
+.bi-bar-chart-line{
+    color: #6034be;
+    font-size: 25px;
+    padding: 17px;
+    border-radius: 10px;
+    background-color: #f1eafc;
+
+}
+.bi-gear{
+    color: #6034be;
+    font-size: 25px;
+    padding: 17px;
+    border-radius: 10px;
+    background-color: #f1eafc;
+    
+}
+.historias{
+    display:flex;
+    justify-content: center;
+    width: 1200px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.historias-quevuelan{
+    background-color: #360c72;
+    padding: 65px;
+    border-radius: 45px;
+    height: 70px;
+    width: 1000px;
+
+}
+
+.ganasmas{
+
+    margin-top: 34px;
+}
+
+
+.vendemas{
+    margin-top: 34px;
+}
+.arriba{
+    margin-top: -30px;
+    color: #ffffff;
+    font-size: 30px;
+
+}
+
+.abajo{
+    margin-top: -25px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: normal;
+
+}
+.conoce-mas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    margin-right: 85px;
+    margin-left:700px;
+    padding: 20px;
+    border-radius: 40px;
+    width: 200px;
+    background-color:#ffffff;
+    color: #6034be;
+}
+
+.conoce-mas:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.cobroidealparte1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+   
+}
+
+.mediodecobro{
+    color:#2b2b2c;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.tunegocio{
+    color:#777774;
+    font-weight: normal;
+    margin-top: -5px;
+
+}
+
+.segundaparte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.codigor{
+    width: 50%;
+    float: left;
+    margin-left: 190px;
+}
+
+.codigoqr2{
+    font-size: 30px;
+    color: #2c292b;
+    font-weight: bold;
+
+}
+.cobroideal2{
+    font-size: 19px;
+    color: #6c6154;
+    font-weight: normal;
+}
+.primeraimagenqr{
+    margin-right: 250px;
+    height: 200px;
+    width: 300px;
+    
+}
+.conocemas2{
+    padding: 15px 35px;
+    background-color: #652bdf;
+    border-radius: 45px;
+    position: relative;
+    top: 60px;
+    color: #ffffff;
+
+}
+
+.conocemas2:hover{
+    background-color: #360c72;
+}
+
+.cobroidealnavepoint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 130px;
+}
+
+
+.navepoint1{
+    font-size: 30px;
+    color: #2c292b;
+    font-weight: bold;
+}
+
+.debidoycredito{
+    font-size: 19px;
+    color: #6c6154;
+    font-weight: normal;
+
+}
+
+.conocemas4{
+    padding: 15px 35px;
+    background-color: #652bdf;
+    border-radius: 45px;
+    position: relative;
+    top: 60px;
+    color: #ffffff;
+
+}
+
+.conocemas4:hover{
+    background-color: #360c72;
+}
+
+.segundaimagen{
+    height: 300px;
+    width: 400px;
+    margin-top: 30px;
+    width: 30%;
+}
+
+.parteabajo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 200px;
+    width: 85%;
+    gap: 90px;
+    margin-right: 350px;
+}
+
+.primerasesion{
+    display: flex;
+    flex-direction: column;
+    
+}
+.anclas{
+display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: normal;
+
+}
+
+.espacio{
+    margin:  10px 8px; 
+    color: #383632;
+    font-weight: normal;
+    font-size: 14px;
+
+
+}
+
+.espacio:hover{
+   color:   #4116a0;
+    text-decoration: underline;
+
+}
+
+.otrologo{
+color: #352726;
+font-weight: bold;
+margin-left: 8px;
+margin-top: 10px;
+
+}
+.cobro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    color: #352726;
+}
+
+.Beneficios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px; 
+    color: #352726;
+}
+
+.Interesar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    color: #352726;
+}
