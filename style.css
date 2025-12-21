@@ -20,7 +20,6 @@
 
 .header{
     background-color:#ffffff;
-    width: 100%;
     height: 82px;
     display: flex;
     justify-content: center;
@@ -28,36 +27,38 @@
     font-size: 14px;
     border-bottom: 1px solid #cececfec;
     position: fixed ;
-    top: 0px;
+    z-index: 1000;
     left: 0px;
-     z-index: 1000;
-
+   top: 0px;
+   width: 100%;
+   padding:0px 20px ;
 }
+
 .header__contenedor-contenidos{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width:95%;
-    margin-left: 140px;
+   justify-content: center;
+   max-width: 1023px;
+   align-items: center;
+   background-color:#ffffff;
 
 }
+
 
 .header__botones{
     display: flex;
     flex-direction: row;
     gap: 15px;
-    width: 33%;
+    width: 350px;
     margin-left: 30px;
 }
 
 .header__navelista{
     display: flex;
     flex-direction: row;
-    gap: 42px;
-    margin: 1px;
-    width: 100%;
+    gap: 33px;
     color: #242c37;
-    align-items: center;
+ 
    
 }
 
@@ -69,6 +70,7 @@ ul{
     width: 1px;
     height: 25px;
     background-color: #a0a0a0;
+    margin-left: 15px;
 }
 
 .nave{
@@ -124,26 +126,26 @@ ul{
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #fcfbff;
+    width: 100%;
 }
 
 .principal{
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin-top: 80px;
+    flex-direction: row;
+    margin-top: 95px;
     font-size: 20px;
     font-weight: bold;
     color: #2b2b2c;
+
 }
 
 .contenido{
-    display:flex;
+    display: flex;
     justify-content: center;
-    width: 1000px;
-    margin-left: 200px;
     margin-top: 50px;
     color: #2b2b2c;
     gap: 25px;
-
 }
 
 .clarita{
@@ -178,16 +180,15 @@ ul{
 .historias{
     display:flex;
     justify-content: center;
-    width: 1200px;
-    margin-left: 100px;
     margin-top: 50px;
 }
 .historias-quevuelan{
     background-color: #360c72;
-    padding: 65px;
-    border-radius: 45px;
-    height: 70px;
-    width: 1000px;
+    padding: 60px;
+    border-radius: 40px;
+    height: 75px;
+    width: 1022px;
+
 
 }
 
@@ -236,13 +237,14 @@ ul{
 
 .cobroidealparte1{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    margin: 50px;
-   
 }
 
-.mediodecobro{
+.mediodecobro{    
+    display: flex;
+    margin-top: 50px;
+    justify-content:center;
     color:#2b2b2c;
     font-size: 40px;
     font-weight: bold;
@@ -250,23 +252,26 @@ ul{
 }
 
 .tunegocio{
+    display: flex;
     color:#777774;
     font-weight: normal;
-    margin-top: -5px;
+    justify-content: center;
 
 }
+
 
 .segundaparte{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
-}
+    gap: 50px;
+    margin-top: 70px;
 
+}
 .codigor{
-    width: 50%;
-    float: left;
-    margin-left: 190px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .codigoqr2{
@@ -293,27 +298,39 @@ ul{
     position: relative;
     top: 60px;
     color: #ffffff;
-
+    width: 180px;
 }
+
 
 .conocemas2:hover{
     background-color: #360c72;
 }
 
-.cobroidealnavepoint{
+.cobroidealnavepointsegundaparte{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    gap: 130px;
+    flex-direction: row;
+    margin-top: 130px;
+    gap: 25px;
 }
 
+
+.pointsolo{
+    float: right;
+}
+
+.navepoint{
+    margin-top: 60px;
+    float: right;
+}
 
 .navepoint1{
     font-size: 30px;
     color: #2c292b;
     font-weight: bold;
+
 }
+
 
 .debidoycredito{
     font-size: 19px;
@@ -348,9 +365,7 @@ ul{
     justify-content: center;
     flex-direction: row;
     margin-top: 200px;
-    width: 85%;
     gap: 90px;
-    margin-right: 350px;
 }
 
 .primerasesion{
@@ -408,3 +423,286 @@ margin-top: 10px;
     margin-top: 52px;
     color: #352726;
 }
+
+
+.botonhamburguesa {
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #413e3e;
+    display: none;
+    margin-top: 5px;
+
+}
+
+.logomobile{
+    display: none;
+}
+
+.segundaparteotro{
+    display: none;
+}
+
+.cambiarpantallachica{
+    display: none;
+}
+
+.grid10{
+    display: none;
+}
+
+@media screen and (max-width: 991px ){
+
+    .botonhamburguesa {
+        display: flex;
+        text-align: center;
+        margin-top: 15px;
+        float: left;
+        margin-left: -400px;
+       
+    }
+    
+    .logomobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -300px;
+    }
+
+    .navegador{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+    .divider-line{
+        display: none;
+
+    }
+    .header__botones{
+        display: none;
+    }
+    .principal{
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:center
+        
+    }
+    .contenido{
+        max-width: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historias{
+        max-width: 500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .historias-quevuelan{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        padding: 150px 30px;
+        justify-content: center;
+        margin-left: 100px;
+       
+    }
+
+    .arriba{
+        margin-top: 10px;
+    }
+       
+    .conoce-mas {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 45px;
+     }
+
+    .cobroideal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .cobroidealparte1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .segundaparteotro{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+        
+    }
+    .primeraimagenqr2{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+
+    .segundaparte{
+        display: none;
+    }
+
+    .codigorotro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 70px;
+            
+    }
+    .codigoqrnuevo{
+        font-size: 30px;
+        color: #2c292b;
+        font-weight: bold;
+    }
+
+    .cobroideal10{
+        font-size: 19px;
+        color: #6c6154;
+        font-weight: normal;
+    }
+
+    .conocemas98{
+    padding: 15px 35px;
+    background-color: #652bdf;
+    border-radius: 45px;
+    color: #ffffff;
+    width: 180px;
+
+    }
+
+    .cobroidealnavepointsegundaparte{
+        display: none;
+    }
+
+    .cambiarpantallachica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navepointsolo1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .navepoint19{
+        font-size: 30px;
+        color: #2c292b;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .aceptapagos{
+        font-size: 19px;
+        color: #6c6154;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conocemas40{
+        display: flex;
+        padding: 15px 35px;
+        background-color: #652bdf;
+        border-radius: 45px;
+        position: relative;
+        color: #ffffff;
+        width: 180px;
+
+    }
+
+    .parteabajo{
+        display: none;
+    }
+
+    .grid10{
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: row;
+        gap: 30px;
+         max-height: 1000px;
+    }
+
+    .primerasesion100{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 200px;
+        margin-top: 50px;
+
+    }
+
+    .otrologo100{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: -200px;
+    }
+
+    .anclas100{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .beneficios100{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cobro100{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .cobro100ultimo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .espacio100{
+        font-size: 13px;
+        color:#383632;
+        font-weight: normal;
+        margin-top: 10px;
+    }
+
+    .otrologonave{
+        font-size:13px;
+        color: #352726;
+        margin-top: 5px;
+    }
+    .beneficios100{
+        font-size:13px;
+        color: #352726;
+        margin-top: 7px;
+    }
+
+    .cobro100ultimo{
+        font-size:13px;
+        color: #352726;
+        margin-top: 5px;
+    }
+
+    .interesar100{
+        font-size:13px;
+        color: #352726;
+        margin-top: 10px;
+    }
+}
+    
+    
+
+
