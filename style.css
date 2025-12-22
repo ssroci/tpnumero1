@@ -511,9 +511,9 @@ margin-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 350px;
+        max-width: 340px;
         text-align: center;   
-        padding: 130px 12px;  
+        padding: 120px 5px;  
       
     }
 
@@ -578,7 +578,7 @@ margin-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 70px;
+        margin-left: 20px;
             
     }
     .codigoqrnuevo{
@@ -594,11 +594,14 @@ margin-top: 10px;
     }
 
     .conocemas98{
-    padding: 15px 35px;
+        display: flex;
+        flex-direction: row;
+    padding: 15px 45px;
     background-color: #652bdf;
-    border-radius: 45px;
+    border-radius: 40px;
     color: #ffffff;
-    width: 180px;
+    width: 200px;
+    
 
     }
 
@@ -625,7 +628,7 @@ margin-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 100px;
+        margin-left: 20px;
     }
 
     .navepoint19{
@@ -647,10 +650,10 @@ margin-top: 10px;
         display: flex;
         padding: 15px 35px;
         background-color: #652bdf;
-        border-radius: 45px;
+        border-radius: 40px;
         position: relative;
         color: #ffffff;
-        width: 180px;
+        width: 200px;
 
     }
 
@@ -674,7 +677,7 @@ margin-top: 10px;
         display: flex;
         justify-content: center;
         flex-direction: row;
-        margin-left:200px;
+        margin-left:180px;
         margin-top: 50px;
 
     }
@@ -683,7 +686,7 @@ margin-top: 10px;
         display: flex;
         flex-direction: column;
         margin-top: 100px;
-        margin-left: -200px;
+        margin-left: -220px;
     }
 
     .anclas100{
@@ -721,7 +724,7 @@ margin-top: 10px;
         text-decoration: underline;
     }
 
-    .otrologonave{
+    .otrologonav{
         font-size:13px;
         color: #352726;
         margin-top: 5px;
