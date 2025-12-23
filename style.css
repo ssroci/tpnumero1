@@ -454,11 +454,6 @@ margin-top: 10px;
 
 @media screen and (max-width: 991px ){
 
-    .bodynuevo{
-        display:flex;
-    }
-
-
     .botonhamburguesa {
         display: flex;
         text-align: center;
@@ -547,7 +542,7 @@ margin-top: 10px;
     }
     
 
-     .conoce-mas:hover{
+    .conoce-mas:hover{
     background-color: #000000;
     color: #ffffff;
      }
@@ -613,8 +608,8 @@ margin-top: 10px;
     }
 
     .conocemas98{
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
     padding: 15px 45px;
     background-color: #652bdf;
     border-radius: 40px;
