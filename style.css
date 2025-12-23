@@ -129,6 +129,7 @@ ul{
     width: 100%;
 }
 
+
 .principal{
     display: flex;
     justify-content: center;
@@ -452,7 +453,10 @@ margin-top: 10px;
 }
 
 @media screen and (max-width: 991px ){
-    
+
+    .bodynuevo{
+        display:flex;
+    }
 
 
     .botonhamburguesa {
@@ -621,7 +625,7 @@ margin-top: 10px;
     }
 
     .conocemas98:hover{
-        background-color: #360c72
+        background-color: #360c72;
     }
 
     .cobroidealnavepointsegundaparte{
@@ -673,7 +677,7 @@ margin-top: 10px;
     }
 
     .conocemas40:hover{
-        background-color: #360c72
+        background-color: #360c72;
     }
 
     .parteabajo{
